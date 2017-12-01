@@ -58,8 +58,13 @@ target_cpu = "arm" or "arm64"  # Only when building for Android
 
 
 ### Build from the Android tree
-TODO. The plan is to autogenerate the Android.bp build files from the master GN build files (or temporarily maintain both until we can autogenerate them).
-
+In an Android master checkout:
+```
+$ cd external/perfetto
+$ git fetch https://github.com/primiano/perfetto demo-2017-12-01
+$ git checkout FETCH_HEAD
+$ make -C ../../ perfetto
+```
 
 Run tests
 ---------
