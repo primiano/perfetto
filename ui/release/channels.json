@@ -1,0 +1,12 @@
+{
+  "channels": [
+    {
+      "name": "stable",
+      "rev": "HEAD~1"
+    },
+    {
+      "name": "canary",
+      "rev": "HEAD"
+    }
+  ]
+}
