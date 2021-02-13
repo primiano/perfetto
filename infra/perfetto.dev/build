@@ -1,4 +1,5 @@
-# Copyright (C) 2020 The Android Open Source Project
+#!/bin/bash
+# Copyright (C) 2021 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,16 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from flask import Flask, redirect
-
-app = Flask(__name__)
-
-
-@app.route('/', defaults={'path': ''})
-@app.route('/<path:path>')
-def main(path):
-  return redirect('https://perfetto.dev/' + path)
-
-
-if __name__ == '__main__':
-  app.run(host='127.0.0.1', port=8080, debug=True)
+set -eu
+CUR_DIR="$(cd -P ${BASH_SOURCE[0]%/*}; pwd)"
+$CUR_DIR/../../tools/node $CUR_DIR/build.js "$@"
