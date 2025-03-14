@@ -67,7 +67,7 @@ __attribute__((noreturn)) void BusyWait(int64_t tstart_ns,  // PS1
                                         int64_t period_us,
                                         int64_t busy_us,
                                         uint32_t thread_name_count) {
-  int64_t tbusy_ns = tstart_ns;
+  int64_t tbusy_ns = tstart_ns;  // Comment added in CL2 PS1
   int64_t tnext_ns = tstart_ns;
   for (;;) {
     if (thread_name_count)
