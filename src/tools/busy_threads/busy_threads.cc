@@ -63,7 +63,7 @@ void PrintUsage(const char* bin_name) {
 #endif
 }
 
-__attribute__((noreturn)) void BusyWait(int64_t tstart_ns,  // PS1
+__attribute__((noreturn)) void BusyWait(int64_t tstart_ns,  // PS1 + PS2
                                         int64_t period_us,
                                         int64_t busy_us,
                                         uint32_t thread_name_count) {
