@@ -95,6 +95,7 @@ __attribute__((noreturn)) void BusyWait(int64_t tstart,
   }
 }
 
+// CL 2 change
 int BusyThreadsMain(int argc, char** argv) {
   bool background = false;
   int64_t num_threads = -1;
