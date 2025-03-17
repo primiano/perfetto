@@ -42,8 +42,7 @@
 namespace perfetto {
 namespace {
 
-// Add a comment here in CL1 (better)
-// Make this even better (PS3)
+// Add a comment here in CL1 PS2 (after steve comment)
 void SetRandomThreadName(uint32_t thread_name_count) {
 #if PERFETTO_HAVE_PTHREADS
   base::StackString<16> name("busy-%" PRIu32,
