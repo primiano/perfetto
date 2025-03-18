@@ -6,7 +6,7 @@ Unreleased:
   Trace Processor:
     *
   UI:
-    *
+    * CI test 1
   SDK:
     * Added `TraceWriter::drop_count` function for determining the number of
       of times the writer started dropping data due to exhaustion of the shared
