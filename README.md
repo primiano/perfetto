@@ -10,6 +10,7 @@ It is a production-grade tool that is the default tracing system for the
 
 ![](docs/images/perfetto-stack.svg)
 
+MAIN CHANGE
 ## Core Components
 
 Perfetto is not a single tool, but a collection of components that work
