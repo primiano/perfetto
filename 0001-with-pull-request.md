@@ -6,3 +6,5 @@ bla
 
 
 EDIT 2
+
+![omg](diagram.drawio.svg)
